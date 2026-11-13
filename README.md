@@ -1,2 +1,3 @@
-# train-with-mehrdad
-Strength coaching website for Train with Mehrdad
+# Train with Mehrdad
+
+Strength coaching website for Mehrdad Shafiei Dizaji. GitHub Pages publishes the static site from the root of `main`.
