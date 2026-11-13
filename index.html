@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#101110">
 <meta name="description" content="Strength training and gym coaching with Mehrdad Shafiei Dizaji. Explore coaching and get in touch on Instagram.">
 <title>HulkyMeh | Strength Coaching with Mehrdad</title>
@@ -56,12 +56,63 @@ section{padding-block:clamp(54px,8vw,102px)}.grid,.reel-grid{display:grid;grid-t
 @media(max-width:760px){.reels .reel-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 16px}}
 @media(max-width:520px){.reels .reel-grid{grid-template-columns:minmax(0,1fr);max-width:400px;margin-inline:auto;gap:28px}}
 .reels figure{margin:0}.reels video{display:block;width:100%;aspect-ratio:.77;object-fit:contain;background:#20171e}.reels figcaption{padding:12px 4px 5px;text-align:center;font-size:clamp(.84rem,1.5vw,1.03rem);letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+
+.hero {padding:0}
+.hero::before {background:radial-gradient(ellipse at 78% 20%,#353c20,transparent 68%),var(--bg)}
+.hero .hero-layout {display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(18px,5vw,70px);align-items:center;padding-block:clamp(30px,6vw,84px)}
+.hero h1 {font-size:clamp(3rem,7vw,7.3rem)}
+.hero-actions {display:flex;flex-wrap:wrap;gap:10px}
+.hero-film {position:relative;margin:0;width:min(100%,400px);justify-self:end;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#111;box-shadow:0 20px 50px #0007}
+.hero-film video {width:100%;height:100%;object-fit:contain;display:block}
+.hero-film figcaption,.film-toggle,.film-cue {position:absolute;color:var(--ink);background:#101110ed;padding:6px 10px;font-size:.84rem;border-radius:4px}
+.hero-film figcaption {bottom:12px;left:12px}
+.film-toggle {bottom:12px;right:12px;border:1px solid var(--muted);cursor:pointer}
+.film-cue {top:12px;left:12px;border-left:3px solid var(--lime)}
+.coach-photo {display:block;width:min(100%,230px);height:auto;margin-top:18px;border-radius:10px}
+.squat-notes {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px;padding:22px;background:#33222f;border-radius:10px}
+.squat-notes p {margin:0}.squat-notes strong {display:block}
+.mobile-coaching {display:none}
+@media(max-width:650px){
+  .hero .hero-layout,.squat-notes {grid-template-columns:minmax(0,1fr)}
+  .hero h1 {font-size:clamp(2.5rem,9vw,4.5rem)}
+  .hero .label {margin-bottom:10px}
+  .hero p:not(.label) {margin-block:12px}
+  .hero-film {width:min(100%,320px);justify-self:center}
+  footer {padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  html {scroll-padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .mobile-coaching {display:flex;justify-content:center;position:fixed;z-index:6;inset:auto 0 0;padding:8px 18px calc(8px + env(safe-area-inset-bottom));background:#101110f5;border-top:1px solid var(--line)}
+  .mobile-coaching .button {width:min(100%,420px)}
+}
+@media(prefers-reduced-motion:no-preference){
+  .hero-copy,.hero-film {animation:rise .65s ease-out both}
+  .hero-film {animation-delay:.12s}
+  @keyframes rise {from{opacity:0;transform:translateY(14px)} to{opacity:1;transform:translateY(0)}}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}.button:hover{transform:none}}
 </style>
 </head>
 <body>
 <header><div class="wrap"><a class="brand" href="#top">Hulky<span>Meh</span></a><nav aria-label="Main"><a href="#coaching">Coaching</a><a href="#about">About</a><a href="#reels">Videos</a></nav></div></header>
 <main id="top">
-<div class="hero"><div class="wrap"><p class="label">Strength coaching</p><h1>Get stronger.<br><span class="accent">Train with a plan.</span></h1><p>Strength coaching with Mehrdad for lifters who want better technique and a routine that fits their week.</p><div class="actions"><a class="button" href="#coaching">Explore coaching</a><a class="button secondary" href="#reels">Watch training videos</a></div></div></div>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-layout">
+    <div class="hero-copy">
+      <p class="label">Strength coaching with Mehrdad</p>
+      <h1 id="hero-title">Get stronger.<br><span class="accent">Lift with confidence.</span></h1>
+      <p>Build your squat, bench press, and deadlift with a training plan that fits your schedule.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://ig.me/m/msdizaji">DM me about coaching</a>
+        <a class="button secondary" href="#reels">Watch my lifts <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+    <figure class="hero-film">
+      <video muted loop playsinline preload="none" poster="videos/squat-reel.webp" aria-hidden="true" data-src="videos/squat-reel.mp4"></video>
+      <figcaption>Barbell squat</figcaption>
+      <span class="film-cue" aria-hidden="true" hidden></span>
+      <button type="button" class="film-toggle" hidden aria-label="Pause squat video">Pause</button>
+    </figure>
+  </div>
+</section>
 <section class="coaching" id="coaching"><div class="wrap">
 <p class="label">Coaching</p>
 <div class="section-head"><h2>Find your starting point</h2><p>Choose the training focus that best fits where you are right now.</p></div>
@@ -70,15 +121,22 @@ section{padding-block:clamp(54px,8vw,102px)}.grid,.reel-grid{display:grid;grid-t
 <article><h3>Barbell technique</h3><p>Already lifting? Work on your squat, bench press, or deadlift and identify what to focus on in your next session.</p><a href="#contact">Ask about technique</a></article>
 <article><h3>Training structure</h3><p>Training regularly but stalled? Organize your sessions around a clear goal and track the lifts that matter to you.</p><a href="#contact">Ask about programming</a></article>
 </div></div></section>
-<section class="bio" id="about"><div class="wrap"><div><p class="label">Your coach</p><h2>Meet Mehrdad</h2></div><div class="bio-copy"><p>I’m Mehrdad Shafiei Dizaji. My background is in structural engineering, and I bring the same habit of measuring progress and making one adjustment at a time to strength training.</p><p>I focus on technique, consistency, and a routine that fits your schedule.</p></div></div></section>
+<section class="bio" id="about"><div class="wrap"><div><p class="label">Your coach</p><h2>Meet Mehrdad</h2><img class="coach-photo" src="videos/mehrdad-gym.webp" width="450" height="650" loading="lazy" alt="Mehrdad training at the gym"></div><div class="bio-copy"><p>I’m Mehrdad Shafiei Dizaji. My background is in structural engineering, and I bring the same habit of measuring progress and making one adjustment at a time to strength training.</p><p>I focus on technique, consistency, and a routine that fits your schedule.</p></div></div></section>
 <section class="reels" id="reels"><div class="wrap"><div class="section-head"><h2>Training videos</h2><a href="https://www.instagram.com/msdizaji/reels/">Follow @msdizaji</a></div><div class="reel-grid">
 <figure class="reel"><video src="videos/squat.mp4" aria-label="Squat" muted loop playsinline controls preload="metadata"></video><figcaption>Squat</figcaption></figure>
 <figure class="reel"><video src="videos/incline-bench.mp4" aria-label="Incline Bench Press" muted loop playsinline controls preload="metadata"></video><figcaption>Incline Bench Press</figcaption></figure>
 <figure class="reel"><video src="videos/dips.mp4" aria-label="Dips" muted loop playsinline controls preload="metadata"></video><figcaption>Dips</figcaption></figure>
 <figure class="reel"><video src="videos/training-clip.mp4" aria-label="Training Clip" muted loop playsinline controls preload="metadata"></video><figcaption>Training Clip</figcaption></figure>
-</div></div></section>
+</div>
+  <aside class="squat-notes" aria-labelledby="squat-notes-title">
+    <h3 id="squat-notes-title">Two cues for the squat</h3>
+    <p><strong>Before the descent</strong> Take a breath and brace your trunk before you bend your knees and hips.</p>
+    <p><strong>On the way up</strong> Keep pressure through your whole foot and drive up through midfoot.</p>
+  </aside>
+</div></section>
 <section class="contact" id="contact"><div class="wrap"><h2>Let’s talk training</h2><div><p>DM me <strong>PLAN</strong> on Instagram and tell me what you’re working toward.</p><p class="prompt">Include your goal, your lifting experience, and how many days a week you can train.</p><a class="button" href="https://ig.me/m/msdizaji">Message @msdizaji</a></div></div></section>
 </main>
+<div class="mobile-coaching"><a class="button" href="https://ig.me/m/msdizaji">DM me about coaching</a></div>
 <footer><div class="wrap"><span>HulkyMeh · Strength coaching with Mehrdad</span><a href="https://www.instagram.com/msdizaji/">Instagram</a></div></footer>
 <script>
 const motion = matchMedia("(prefers-reduced-motion: reduce)");
@@ -110,6 +168,58 @@ document.addEventListener("visibilitychange", () => {
   if (document.hidden) videos.forEach((video) => video.pause());
   else if (!motion.matches) visible.forEach(sync);
 });
+const reducedMotion = motion;
+const heroVideo = document.querySelector('.hero-film video');
+const heroToggle = document.querySelector('.film-toggle');
+function startHero() {
+  if (!heroVideo.hasAttribute('src')) heroVideo.src = heroVideo.dataset.src;
+  heroVideo.play().catch(() => {
+    updateHeroToggle();
+  });
+}
+
+function updateHeroToggle() {
+  const action = heroVideo.paused ? 'Play' : 'Pause';
+  heroToggle.textContent = action;
+  heroToggle.setAttribute('aria-label', action + ' squat video');
+  heroToggle.hidden = false;
+}
+
+heroVideo.addEventListener('playing', updateHeroToggle);
+heroVideo.addEventListener('pause', updateHeroToggle);
+heroVideo.addEventListener('error', () => { heroToggle.hidden = true; });
+heroToggle.addEventListener('click', () => {
+  if (heroVideo.paused) startHero();
+  else heroVideo.pause();
+});
+
+if (!reducedMotion.matches) startHero();
+else updateHeroToggle();
+
+const filmCue = document.querySelector('.film-cue');
+heroVideo.addEventListener('timeupdate', () => {
+  const time = heroVideo.currentTime;
+  const cue = time < 2.05 ? 'Brace before you descend'
+    : time >= 3.45 && time < 5.8 ? 'Drive up through midfoot' : '';
+  if (filmCue.textContent !== cue) filmCue.textContent = cue;
+  filmCue.hidden = !cue;
+});
+
+motion.addEventListener('change', () => { if (motion.matches) heroVideo.pause(); });
+if ('IntersectionObserver' in window) {
+  const reveal = new IntersectionObserver(entries => {
+    for (const {target, isIntersecting} of entries) {
+      if (!isIntersecting) continue;
+      if (!motion.matches && target.animate) {
+        target.animate([{opacity:.55,transform:'translateY(14px)'},{opacity:1,transform:'none'}],
+          {duration:480,easing:'ease-out'});
+      }
+      reveal.unobserve(target);
+    }
+  }, {threshold:.15});
+  document.querySelectorAll('.coaching article,.reel,.squat-notes,.bio .wrap')
+    .forEach(element => reveal.observe(element));
+}
 </script>
 </body>
 </html>
