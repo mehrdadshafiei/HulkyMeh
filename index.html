@@ -68,7 +68,8 @@ section{padding-block:clamp(54px,8vw,102px)}.grid,.reel-grid{display:grid;grid-t
 .hero-film figcaption {bottom:12px;left:12px}
 .film-toggle {bottom:12px;right:12px;border:1px solid var(--muted);cursor:pointer}
 .film-cue {top:12px;left:12px;border-left:3px solid var(--lime)}
-.coach-photo {display:block;width:min(100%,230px);height:auto;margin-top:18px;border-radius:10px}
+.coach-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,2vw,14px);max-width:474px;margin-top:18px}
+.coach-photos img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:10px}
 .squat-notes {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px;padding:22px;background:#33222f;border-radius:10px}
 .squat-notes p {margin:0}.squat-notes strong {display:block}
 .mobile-coaching {display:none}
@@ -121,7 +122,7 @@ section{padding-block:clamp(54px,8vw,102px)}.grid,.reel-grid{display:grid;grid-t
 <article><h3>Barbell technique</h3><p>Already lifting? Work on your squat, bench press, or deadlift and identify what to focus on in your next session.</p><a href="#contact">Ask about technique</a></article>
 <article><h3>Training structure</h3><p>Training regularly but stalled? Organize your sessions around a clear goal and track the lifts that matter to you.</p><a href="#contact">Ask about programming</a></article>
 </div></div></section>
-<section class="bio" id="about"><div class="wrap"><div><p class="label">Your coach</p><h2>Meet Mehrdad</h2><img class="coach-photo" src="videos/mehrdad-about.webp" width="483" height="1050" loading="lazy" alt="Mehrdad in a gym mirror selfie"></div><div class="bio-copy"><p>I’m Mehrdad Shafiei Dizaji. My background is in structural engineering, and I bring the same habit of measuring progress and making one adjustment at a time to strength training.</p><p>I focus on technique, consistency, and a routine that fits your schedule.</p></div></div></section>
+<section class="bio" id="about"><div class="wrap"><div><p class="label">Your coach</p><h2>Meet Mehrdad</h2><div class="coach-photos"><img src="videos/mehrdad-about.webp" width="483" height="1050" loading="lazy" alt="Mehrdad in a gym mirror selfie"><img src="videos/mehrdad-about-side.webp" width="483" height="1049" loading="lazy" alt="Mehrdad posing sideways in a gym mirror"></div></div><div class="bio-copy"><p>I’m Mehrdad Shafiei Dizaji. My background is in structural engineering, and I bring the same habit of measuring progress and making one adjustment at a time to strength training.</p><p>I focus on technique, consistency, and a routine that fits your schedule.</p></div></div></section>
 <section class="reels" id="reels"><div class="wrap"><div class="section-head"><h2>Training videos</h2><a href="https://www.instagram.com/msdizaji/reels/">Follow @msdizaji</a></div><div class="reel-grid">
 <figure class="reel"><video src="videos/squat.mp4" aria-label="Squat" muted loop playsinline controls preload="metadata"></video><figcaption>Squat</figcaption></figure>
 <figure class="reel"><video src="videos/incline-bench.mp4" aria-label="Incline Bench Press" muted loop playsinline controls preload="metadata"></video><figcaption>Incline Bench Press</figcaption></figure>
