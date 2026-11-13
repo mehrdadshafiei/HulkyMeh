@@ -24,14 +24,40 @@ section{padding-block:clamp(54px,8vw,102px)}.grid,.reel-grid{display:grid;grid-t
 @media(max-width:550px){.reel-grid{grid-template-columns:1fr}}
 @media(max-width:360px){header .wrap{gap:10px}.brand{font-size:27px}nav{gap:11px}nav a{font-size:.81rem}h1{font-size:4rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+/* Coaching overview and inquiry */
+.hero .wrap{padding-block:clamp(78px,10vw,130px) clamp(80px,10vw,132px)}
+.hero h1{max-width:8ch;font-size:clamp(4.5rem,10.5vw,9rem)}
+.coaching{background:#eeeee4;color:#151712}
+.coaching .label{color:#435120}
+.coaching .section-head{align-items:center}
+.coaching .section-head p{color:#454a3e;max-width:37ch;margin:0}
+.coaching article{background:#f9f9f1;border-color:#cdd0bd;padding:30px 25px;display:flex;flex-direction:column;align-items:flex-start}
+.coaching article:before{background:#839b36;margin-bottom:28px}
+.coaching article p{color:#454a3e;margin-bottom:22px}
+.coaching article a{margin-top:auto;color:#344518;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+.bio .wrap{align-items:start}
+.bio .bio-copy{border-left:2px solid var(--lime);padding-left:24px}
+.bio .bio-copy p{max-width:52ch}
+.contact .wrap{align-items:start}
+.contact .prompt{padding:13px 15px;border:1px solid #343c1c55;border-radius:6px;margin:0 0 18px}
+.coaching a:focus-visible,.contact a:focus-visible{outline-color:#344518}
+@media(max-width:650px){.hero h1{font-size:clamp(3.85rem,12vw,5.25rem)}.bio .bio-copy{padding-left:16px}}
 </style>
 </head>
 <body>
 <header><div class="wrap"><a class="brand" href="#top">Hulky<span>Meh</span></a><nav aria-label="Main"><a href="#coaching">Coaching</a><a href="#about">About</a><a href="#reels">Reels</a></nav></div></header>
 <main id="top">
-<div class="hero"><div class="wrap"><p class="label">Strength coaching</p><h1>Build real<br><span class="accent">strength.</span></h1><p>Train with Mehrdad. Get comfortable under the bar and build strength you can track.</p><div class="actions"><a class="button" href="#contact">Ask about coaching</a><a class="button secondary" href="#reels">Watch training reels</a></div></div></div>
-<section class="wrap" id="coaching"><h2>What we can work on</h2><div class="grid"><article><h3>Gym fundamentals</h3><p>Learn the main movement patterns and build a routine you can stick with.</p></article><article><h3>Barbell strength</h3><p>Work on squat, bench press, and deadlift technique and build confidence under the bar.</p></article><article><h3>Training structure</h3><p>Set a clear goal, organize your sessions, and track your lifts over time.</p></article></div></section>
-<section class="bio" id="about"><div class="wrap"><h2>Meet Mehrdad</h2><div><p>I’m Mehrdad Shafiei Dizaji. My background is in structural engineering, and I bring the same habit of measuring progress and making one adjustment at a time to strength training.</p><p>I focus on technique, consistency, and a routine that fits your schedule.</p></div></div></section>
+<div class="hero"><div class="wrap"><p class="label">Strength coaching</p><h1>Get stronger.<br><span class="accent">Train with a plan.</span></h1><p>Strength coaching with Mehrdad for lifters who want better technique and a routine that fits their week.</p><div class="actions"><a class="button" href="#coaching">Explore coaching</a><a class="button secondary" href="#reels">Watch training reels</a></div></div></div>
+<section class="coaching" id="coaching"><div class="wrap">
+<p class="label">Coaching</p>
+<div class="section-head"><h2>Find your starting point</h2><p>Choose the training focus that best fits where you are right now.</p></div>
+<div class="grid">
+<article><h3>Gym fundamentals</h3><p>New to lifting or coming back after a break? Learn the main movement patterns and build a routine you can repeat confidently.</p><a href="#contact">Ask about getting started</a></article>
+<article><h3>Barbell technique</h3><p>Already lifting? Work on your squat, bench press, or deadlift and identify what to focus on in your next session.</p><a href="#contact">Ask about technique</a></article>
+<article><h3>Training structure</h3><p>Training regularly but stalled? Organize your sessions around a clear goal and track the lifts that matter to you.</p><a href="#contact">Ask about programming</a></article>
+</div></div></section>
+<section class="bio" id="about"><div class="wrap"><div><p class="label">Your coach</p><h2>Meet Mehrdad</h2></div><div class="bio-copy"><p>I’m Mehrdad Shafiei Dizaji. My background is in structural engineering, and I bring the same habit of measuring progress and making one adjustment at a time to strength training.</p><p>I focus on technique, consistency, and a routine that fits your schedule.</p></div></div></section>
 <section class="reels" id="reels"><div class="wrap"><div class="section-head"><h2>Training reels</h2><a href="https://www.instagram.com/msdizaji/reels/">Follow @msdizaji</a></div><div class="reel-grid">
 <div class="reel"><iframe title="Training reel 1 by Mehrdad" src="https://www.instagram.com/reel/DfqiVOBR6tF/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfqiVOBR6tF/">Watch on Instagram</a></div>
 <div class="reel"><iframe title="Training reel 2 by Mehrdad" src="https://www.instagram.com/reel/DfqfpTuRYx1/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfqfpTuRYx1/">Watch on Instagram</a></div>
@@ -43,7 +69,7 @@ section{padding-block:clamp(54px,8vw,102px)}.grid,.reel-grid{display:grid;grid-t
 <div class="reel"><iframe title="Training reel 8 by Mehrdad" src="https://www.instagram.com/reel/DfgZ_1Txdf5/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfgZ_1Txdf5/">Watch on Instagram</a></div>
 <div class="reel"><iframe title="Training reel 9 by Mehrdad" src="https://www.instagram.com/reel/DfgXOhVx6jG/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfgXOhVx6jG/">Watch on Instagram</a></div>
 </div></div></section>
-<section class="contact" id="contact"><div class="wrap"><h2>Let’s talk training</h2><div><p>Send me an Instagram DM with your training goal, how long you’ve been lifting, and how many days a week you can train.</p><a class="button" href="https://ig.me/m/msdizaji">Message @msdizaji</a></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><h2>Let’s talk training</h2><div><p>DM me <strong>PLAN</strong> on Instagram and tell me what you’re working toward.</p><p class="prompt">Include your goal, your lifting experience, and how many days a week you can train.</p><a class="button" href="https://ig.me/m/msdizaji">Message @msdizaji</a></div></div></section>
 </main>
 <footer><div class="wrap"><span>HulkyMeh · Strength coaching with Mehrdad</span><a href="https://www.instagram.com/msdizaji/">Instagram</a></div></footer>
 </body>
