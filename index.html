@@ -43,6 +43,18 @@ section{padding-block:clamp(54px,8vw,102px)}.grid,.reel-grid{display:grid;grid-t
 .contact .prompt{padding:13px 15px;border:1px solid #343c1c55;border-radius:6px;margin:0 0 18px}
 .coaching a:focus-visible,.contact a:focus-visible{outline-color:#344518}
 @media(max-width:650px){.hero h1{font-size:clamp(3.85rem,12vw,5.25rem)}.bio .bio-copy{padding-left:16px}}
+
+/* Training reel gallery */
+.reels{background:#422d3c;color:#faf5f5}
+.reels .section-head a{color:#fff0d9}
+.reels .reel-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr) minmax(0,1fr);column-gap:clamp(16px,3.5vw,48px);row-gap:44px;align-items:center;margin-top:clamp(32px,5vw,66px)}
+.reels .reel{border:0;border-radius:0;background:transparent}
+.reels .reel iframe{aspect-ratio: .77;background:#33222f}
+.reels .reel a{display:block;padding:12px 4px 5px;text-align:center;color:#faf5f5;font-size:clamp(.84rem,1.5vw,1.03rem);letter-spacing:.1em;text-transform:uppercase}
+.reels .reel a:hover{background:transparent;text-decoration:underline;text-underline-offset:5px}
+.reels a:focus-visible{outline-color:#fff0d9;outline-offset:-2px}
+@media(max-width:760px){.reels .reel-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 16px}}
+@media(max-width:520px){.reels .reel-grid{grid-template-columns:minmax(0,1fr);max-width:400px;margin-inline:auto;gap:28px}}
 </style>
 </head>
 <body>
@@ -59,15 +71,15 @@ section{padding-block:clamp(54px,8vw,102px)}.grid,.reel-grid{display:grid;grid-t
 </div></div></section>
 <section class="bio" id="about"><div class="wrap"><div><p class="label">Your coach</p><h2>Meet Mehrdad</h2></div><div class="bio-copy"><p>I’m Mehrdad Shafiei Dizaji. My background is in structural engineering, and I bring the same habit of measuring progress and making one adjustment at a time to strength training.</p><p>I focus on technique, consistency, and a routine that fits your schedule.</p></div></div></section>
 <section class="reels" id="reels"><div class="wrap"><div class="section-head"><h2>Training reels</h2><a href="https://www.instagram.com/msdizaji/reels/">Follow @msdizaji</a></div><div class="reel-grid">
-<div class="reel"><iframe title="Training reel 1 by Mehrdad" src="https://www.instagram.com/reel/DfqiVOBR6tF/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfqiVOBR6tF/">Watch on Instagram</a></div>
-<div class="reel"><iframe title="Training reel 2 by Mehrdad" src="https://www.instagram.com/reel/DfqfpTuRYx1/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfqfpTuRYx1/">Watch on Instagram</a></div>
-<div class="reel"><iframe title="Training reel 3 by Mehrdad" src="https://www.instagram.com/reel/Dfi_hrRxfaK/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/Dfi_hrRxfaK/">Watch on Instagram</a></div>
-<div class="reel"><iframe title="Training reel 4 by Mehrdad" src="https://www.instagram.com/reel/Dfi7vyfxHj-/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/Dfi7vyfxHj-/">Watch on Instagram</a></div>
-<div class="reel"><iframe title="Training reel 5 by Mehrdad" src="https://www.instagram.com/reel/Dfi4whHR3B6/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/Dfi4whHR3B6/">Watch on Instagram</a></div>
-<div class="reel"><iframe title="Training reel 6 by Mehrdad" src="https://www.instagram.com/reel/Dfi1-aURM2a/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/Dfi1-aURM2a/">Watch on Instagram</a></div>
-<div class="reel"><iframe title="Training reel 7 by Mehrdad" src="https://www.instagram.com/reel/DfiyXn7RR2X/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfiyXn7RR2X/">Watch on Instagram</a></div>
-<div class="reel"><iframe title="Training reel 8 by Mehrdad" src="https://www.instagram.com/reel/DfgZ_1Txdf5/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfgZ_1Txdf5/">Watch on Instagram</a></div>
-<div class="reel"><iframe title="Training reel 9 by Mehrdad" src="https://www.instagram.com/reel/DfgXOhVx6jG/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfgXOhVx6jG/">Watch on Instagram</a></div>
+<div class="reel"><iframe title="Training reel 1 by Mehrdad" src="https://www.instagram.com/reel/DfqiVOBR6tF/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfqiVOBR6tF/" aria-label="1,000 Push-Ups a Day — watch on Instagram">1,000 Push-Ups a Day</a></div>
+<div class="reel"><iframe title="Training reel 2 by Mehrdad" src="https://www.instagram.com/reel/DfqfpTuRYx1/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfqfpTuRYx1/" aria-label="100 Push-Ups — watch on Instagram">100 Push-Ups</a></div>
+<div class="reel"><iframe title="Training reel 3 by Mehrdad" src="https://www.instagram.com/reel/Dfi_hrRxfaK/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/Dfi_hrRxfaK/" aria-label="Dips with Chains — watch on Instagram">Dips with Chains</a></div>
+<div class="reel"><iframe title="Training reel 4 by Mehrdad" src="https://www.instagram.com/reel/Dfi7vyfxHj-/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/Dfi7vyfxHj-/" aria-label="Boxing — watch on Instagram">Boxing</a></div>
+<div class="reel"><iframe title="Training reel 5 by Mehrdad" src="https://www.instagram.com/reel/Dfi4whHR3B6/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/Dfi4whHR3B6/" aria-label="Training Reel 5 — watch on Instagram">Training Reel 5</a></div>
+<div class="reel"><iframe title="Training reel 6 by Mehrdad" src="https://www.instagram.com/reel/Dfi1-aURM2a/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/Dfi1-aURM2a/" aria-label="180 lb Dips — watch on Instagram">180 lb Dips</a></div>
+<div class="reel"><iframe title="Training reel 7 by Mehrdad" src="https://www.instagram.com/reel/DfiyXn7RR2X/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfiyXn7RR2X/" aria-label="Training Reel 7 — watch on Instagram">Training Reel 7</a></div>
+<div class="reel"><iframe title="Training reel 8 by Mehrdad" src="https://www.instagram.com/reel/DfgZ_1Txdf5/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfgZ_1Txdf5/" aria-label="Training Reel 8 — watch on Instagram">Training Reel 8</a></div>
+<div class="reel"><iframe title="Training reel 9 by Mehrdad" src="https://www.instagram.com/reel/DfgXOhVx6jG/embed/" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://www.instagram.com/msdizaji/reel/DfgXOhVx6jG/" aria-label="Training Reel 9 — watch on Instagram">Training Reel 9</a></div>
 </div></div></section>
 <section class="contact" id="contact"><div class="wrap"><h2>Let’s talk training</h2><div><p>DM me <strong>PLAN</strong> on Instagram and tell me what you’re working toward.</p><p class="prompt">Include your goal, your lifting experience, and how many days a week you can train.</p><a class="button" href="https://ig.me/m/msdizaji">Message @msdizaji</a></div></div></section>
 </main>
